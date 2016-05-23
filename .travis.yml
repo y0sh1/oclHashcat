@@ -9,3 +9,5 @@ compiler:
   - gcc
 script:
   - make
+  - perl tools/test.pl
+  - tools/test.sh
