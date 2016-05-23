@@ -4,6 +4,7 @@ dist: trusty
 sudo: required
 language: perl
 before_install:
+  - sudo apt-get update
   - sudo apt-get install fglrx opencl-headers
   - cpanm Digest::MD4 Digest::MD5 Digest::SHA Digest::HMAC Digest::Keccak Crypt::MySQL Digest::GOST Digest::HMAC_MD5 Digest::CRC Crypt::PBKDF2 Crypt::DES Crypt::ECB Crypt::CBC Crypt::Eksblowfish::Bcrypt Crypt::Digest::RIPEMD160 Crypt::Digest::Whirlpool Crypt::RC4 Crypt::ScryptKDF Crypt::Rijndael Crypt::Twofish Crypt::Mode::ECB Crypt::UnixCrypt_XS MIME::Base64 Authen::Passphrase::NTHash Authen::Passphrase::MySQL323 Authen::Passphrase::PHPass Authen::Passphrase::LANManager Encode POSIX Net::DNS::SEC Net::DNS::RR::NSEC3 Convert::EBCDIC Digest::SipHash
 install:
