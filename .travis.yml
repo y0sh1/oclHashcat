@@ -1,5 +1,7 @@
 os:
   - linux
+dist: trusty
+sudo: required
 language: perl
 before_install:
   - sudo apt-get install fglrx opencl-headers
