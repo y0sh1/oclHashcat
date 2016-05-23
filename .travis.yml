@@ -13,6 +13,7 @@ install:
 compiler:
   - gcc
 script:
+  - cat /proc/cpuinfo
   - make
   - perl tools/test.pl single
   - tools/test.sh
