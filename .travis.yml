@@ -11,5 +11,5 @@ compiler:
   - gcc
 script:
   - make
-  - perl tools/test.pl
+  - perl tools/test.pl single
   - tools/test.sh
