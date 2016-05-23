@@ -5,6 +5,7 @@ language: c
 install:
   - mkdir -p deps/OpenCL-Headers
   - git clone https://github.com/KhronosGroup/OpenCL-Headers deps/OpenCL-Headers/CL
+  - cpanm MD4
 compiler:
   - gcc
 script:
